@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Icons  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="img\andin-gourmet-logo.png">
+    <title>Fashionista - Andin Gourmet</title>
+
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="navbar-brand">
+            <img src="img\andin-gourmet-logo.png" alt="Logo" class="navbar-logo">
+        </div>
+        <ul class="nav-list " style="list-style: none;">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Catering</a></li>
+        </ul>
+
+        <div class="nav-items">
+            <button class="nav-item button-primary">
+                Order Now
+            </button>
+        </div>
+    </header>
+
+
+
+
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Menu</a>
+            <a href="#">Contact</a>
+            <a href="#">Catering</a>
+            <div class="nav-items">
+                <button class="nav-item button-primary">
+                    Order Now
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <span onclick="openNav()">
+        <button class="nav-button button-primary"> Menu</button>
+    </span>
+    </header>
+
+    <Section class="hero-section">
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 7</div>
+                <img src="img\slideshow2.jpg" style="width:100%">
+                <div class="text">Welcome to Adyn Gourment.
+                    <p>First we eat, and later, we change the world.</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 7</div>
+                <img src="img\slideshow1.jpg" style="width:100%">
+                <div class="text">I'm not Drooling, You are.
+                    <br> The hottest food in route
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 7</div>
+                <img src="img\slideshow3.jpg" style="width:100%">
+                <div class="text">Tasty Jobs. From Grill to plate.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 7</div>
+                <img src="img\slideshow4.jpg" style="width:100%">
+                <div class="text">Magic happens in the kitchen during Lunch time and dinner time.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 7</div>
+                <img src="img\slideshow5.jpg" style="width:100%">
+                <div class="text">If you are sad, head towards Adyn Gourment restaurant and spend some time
+                    there, you will find everything better.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 7</div>
+                <img src="img\slideshow6.jpg" style="width:100%">
+                <div class="text">You made us who we are today, so why we don't serve you the best we can ever have?
+                </div>
+            </div>
+
+
+
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+
+
+        </div>
+    </Section>
+
+    <section class="why-us">
+        <div class="why-head">
+
+            <h3 class="card-title">WHY <span>ANDIN GOURMET?</span></h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+        </div>
+        <div class="card">
+            <h1 class="number-title">01</h1>
+            <div class="container">
+                <h4><b>Some header</b></h4>
+                <p>some reason why </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h1 class="number-title">03</h1>
+            <div class="container">
+                <h4><b>Some header</b></h4>
+                <p>some reason why </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h1 class="number-title">04</h1>
+            <div class="container">
+                <h4><b>Some header</b></h4>
+                <p>some reason why </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="welcome">
+        <div class="row">
+            <div class="welcome-img"> <img src="img\slideshow8.jpg" alt="" class="welcome-image">
+
+            </div>
+
+            <!-- <div class="stretch"> -->
+            <div class="welcome-content">
+                <h3>lorem lorem <strong>Ipsium ipsium</strong></h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt quae eos facere quibusdam
+                    fugit molestiae id ratione ullam fuga impedit beatae enim voluptatem magni voluptatibus modi
+                    porro, accusamus ex inventore.</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fuga at nobis, minus eos dolore,
+                    perspiciatis, optio officiis similique veritatis iste. Omnis consequatur asperiores nulla, a
+                    ullam cum aliquam. Atque.
+                </p>
+
+                <ul>
+                    <li><i class="uil uil-check-circle"></i>Lorem ipsum dolor sit amet, consectetur adipisicing
+                    </li>
+                    <li><i class="uil uil-check-circle"></i>Lorem ipsum dolor sit amet, consectetur adipisicing
+                    </li>
+                    <li><i class="uil uil-check-circle"></i>Lorem ipsum dolor sit amet, consectetur adipisicing
+                    </li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quas mollitia repellendus, ad
+                    obcaecati nemo at voluptate minima animi maiores quidem magnam eveniet. Reiciendis ipsum dolore
+                    repudiandae asperiores laboriosam fuga.</p>
+            </div>
+            <!-- </div> -->
+        </div>
+    </section>
+
+
+    <script src="js\main.js"></script>
+</body>
+
+</html>
