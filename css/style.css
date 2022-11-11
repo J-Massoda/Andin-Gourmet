@@ -1,7 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+
 * {
 
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 *,
@@ -22,7 +32,12 @@ body {
             #ff512f 100%);
     overflow: scroll;
     background-size: cover;
+    margin: 0;
     background-position: top;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    /* font-weight: 300; */
+    font-size: 12px;
+    line-height: 30px;
 }
 
 header {
@@ -32,6 +47,8 @@ header {
     width: 100%;
     z-index: 100000;
 }
+
+
 
 li {
     list-style: none;
@@ -59,8 +76,25 @@ p {
 
 .container {
     max-width: 1224px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+.section-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container-content {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
 }
 
 /* Styling the rest of the class  */
@@ -420,13 +454,13 @@ span {
     }
 }
 
-/* .row {
+.row {
     display: flex;
     flex-wrap: wrap;
     margin-top: 0;
     margin-right: 1.5rem;
     margin-left: 1.5rem;
-} */
+}
 
 .welcome .row {
     display: flex;
@@ -535,6 +569,12 @@ span {
     margin-left: 1.5rem;
 }
 
+/* .row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+} */
+
 .menu .menu-content {
     margin-top: 30px;
     overflow: hidden;
@@ -605,20 +645,19 @@ span {
 
 
 .event-item {
-    /* display: inline-block; */
+    display: inline-block;
     justify-content: space-between;
     align-items: center;
-    /* min-height: 300px; */
+    min-height: 300px;
     /* padding: 2fr 3fr; */
     position: absolute;
 }
 
 @media screen and (max-width: 600px) {
 
-    .event-item,
-    p {
+    .event-item {
         display: flex;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
     }
 }
 
@@ -676,4 +715,296 @@ img {
 
 .italic {
     font-style: italic;
+}
+
+
+/* -------------------------------------------------- Form section   ------------------------------------------------------- */
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="time"],
+#contact input[type="date"],
+#contact input[type="number"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+    font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+    background-image: linear-gradient(to right, #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%);
+    /* background: #F9F9F9; */
+    width: 100%;
+    padding: 25px;
+    /* margin: 50px 0; */
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #AAA;
+}
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: rgb(3, 153, 212);
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+    background: #09C;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #999;
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+:-moz-placeholder {
+    color: #888;
+}
+
+::-moz-placeholder {
+    color: #888;
+}
+
+:-ms-input-placeholder {
+    color: #888;
+}
+
+.success {
+    color: green;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+}
+
+.failed {
+    color: red;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+}
+
+.section-heading {
+    /* font-family: 'Satisfy', cursive !important; */
+    text-align: center;
+    margin: 15px 0 0 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: #5f5950;
+}
+
+.section-text>p {
+    margin: 0;
+    width: 100vw;
+    padding: 10px !important;
+    font-weight: 300;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+/* Galerry show  */
+
+/* Position the image container (needed to position the left and right arrows) */
+/* .containerr {
+    position: relative;
+    max-width: 900px;
+
+
+    justify-content: center;
+
+    align-items: center;
+} */
+
+/* Hide the images by default */
+/* .mygallery {
+    display: none;
+} */
+
+/* Add a pointer when hovering over the thumbnail images */
+/* .cursor {
+    cursor: pointer;
+} */
+
+/* Next & previous buttons */
+/* .prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+} */
+
+/* Position the "next button" to the right */
+/* .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+} */
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+} */
+
+/* Number text (1/3 etc) */
+/* .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+} */
+
+/* Container for image text */
+/* .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+} */
+
+/* .roww:after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+/* Six columns side by side */
+/* .column {
+    float: left;
+    width: 16.66%;
+} */
+
+/* Add a transparency effect for thumnbail images */
+/* .demo {
+    opacity: 0.6;
+} */
+
+/* .active,
+.demo:hover {
+    opacity: 1;
+} */
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.roww {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
 }

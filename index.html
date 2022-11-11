@@ -269,6 +269,183 @@
 
         </div>
     </section>
+    <section>
+        <div class="container section-container">
+            <h1 class="section-heading">
+                Book a <span>Table</span>
+            </h1>
+            <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, dolor a, officiis
+                eius
+                ipsam animi placeat commodi porro delectus veritatis repudiandae, est expedita non! Quas sapiente soluta
+                excepturi ut deleniti.</p>
+        </div>
+        <div class="container container-content">
+            <form role="form" action="" class="cantact-form" id="contact">
+                <div class="row-sec">
+                    <div class="row row-menu">
+                        <div class="form-group">
+                            <fieldset>
+                                <input type="text" name="Name" placeholder="Your Name" tabindex="1" autocomplete="off"
+                                    id="name" class="form-control" autofocus>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="row row-menu">
+                        <div class="form-group">
+                            <fieldset>
+                                <input type="email" name="email" placeholder="Your Email Address" autocomplete="off"
+                                    id="name" class="form-control" tabindex="2">
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="row row-menu">
+                        <div class="form-group">
+                            <fieldset>
+                                <input type="tel" name="tel" placeholder="Your Phone Number" autocomplete="off"
+                                    id="name" class="form-control" tabindex="3">
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-sec">
+                    <div class="row row-menu">
+                        <div class="form-group">
+                            <fieldset>
+                                <input type="time" name="Time" placeholder="Time" tabindex="1" autocomplete="off"
+                                    id="name" class="form-control">
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="row row-menu">
+                        <div class="form-group">
+                            <fieldset>
+                                <input type="Date" name="Date" placeholder="Booking Date" autocomplete="off" id="name"
+                                    class="form-control" tabindex="2">
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="row row-menu">
+                        <div class="form-group">
+                            <fieldset>
+                                <input type="number" name="number" placeholder="Number of people" autocomplete="off"
+                                    id="name" class="form-control" tabindex="3">
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-sec">
+                    <div class="row row-menu">
+                        <div class="form-group">
+                            <fieldset>
+                                <input type="text" name="Subject" placeholder="Type Your subject line"
+                                    autocomplete="off" id="name" class="form-control" tabindex="1">
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="row row-menu">
+                        <div class="form-group">
+                            <fieldset>
+                                <textarea name="message" placeholder="Type Your Message Details Here..."
+                                    autocomplete="off" id="name" class="form-control" tabindex="2"></textarea>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="success">
+                        <?php echo $success; ?>
+                    </p>
+                    <p class="failed">
+                        <?php echo $failed; ?>
+                    </p>
+
+                </div>
+                <fieldset>
+                    <button type="submit" name="submit" id="contact-submit" data-submit="...Sending"
+                        class="button-primary">Submit Now</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+    <!-- ----------------------------------------- Gallery Section ------------------------------------------------------------------------------- -->
+    <Section class="gallery">
+        <!-- Header -->
+        <div class="header section-heading">
+            <h1>Check Out Our <span>Gallery</span></h1>
+            <p>Photos Of Andin Gourmet.</p>
+        </div>
+
+        <!-- Photo Grid -->
+        <div class="roww">
+            <div class="column">
+                <img src="img\beauty.jpg" style="width:100%">
+                <img src="img\fadeshow.jpg" style="width:100%">
+                <img src="img\fadeshow1.jpg" style="width:100%">
+                <img src="img\fadeshow2.jpg" style="width:100%">
+                <img src="img\nice.jpg" style="width:100%">
+                <img src="img\nice2.jpg" style="width:100%">
+                <img src="img\nice3.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="img\Random5.jpg" style="width:100%">
+                <img src="img\random6.jpg" style="width:100%">
+                <img src="img\random7.jpg" style="width:100%">
+                <img src="img\random8.jpg" style="width:100%">
+                <img src="img\random9.jpg" style="width:100%">
+                <img src="img\rendomm.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="img\slideshow1.jpg" style="width:100%">
+                <img src="img\randome4.jpg" style="width:100%">
+                <img src="img\slideshow1.jpg" style="width:100%">
+                <img src="img\slideshow2.jpg" style="width:100%">
+                <img src="img\slideshow3.jpg" style="width:100%">
+                <img src="img\slideshow4.jpg" style="width:100%">
+                <img src="img\slideshow6.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="img\slideshow5.jpg" style="width:100%">
+                <img src="img\slideshow7.jpg" style="width:100%">
+                <img src="img\slideshow8.jpg" style="width:100%">
+                <img src="img\very-nice.jpg" style="width:100%">
+                <img src="img\slideshow6.jpg" style="width:100%">
+                <img src="img\slideshow5.jpg" style="width:100%">
+            </div>
+        </div>
+
+    </Section>
+
+    <!-- ------------------------------------------------ Contac Us Section  --------------------------------------------- -->
+    <section class="contact-us">
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <?php include 'sentMail.php';?>
     <script src="js\main.js"></script>
 </body>
 
