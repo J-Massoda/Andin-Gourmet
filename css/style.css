@@ -200,35 +200,21 @@ p {
     transition: 1s;
 }
 
-
-
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-/* @media screen and (max-height: 450px) {
-    .overlay a {
-        font-size: 20px
-    }
-
-    .overlay .closebtn,
-    .navbar-logo {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
+.button-primary:hover {
+    cursor: pointer;
+    padding: 20px 50px 20px 50px;
+    background-image: linear-gradient(to right,
+            #dd2476 0%,
+            #ff512f 51%,
+            #dd2476 100%);
 }
 
-@media screen and (max-width: 550px) {
-    .navbar {
-        display: none;
+@media (min-width: 1024px) {
+    .button-primary {
+        padding: 18px;
+        font-size: 20px;
     }
 }
-
-@media screen and (min-width: 550px) {
-
-    .nav-button {
-        display: none;
-    }
-} */
 
 
 /* Slideshow container */
@@ -966,6 +952,17 @@ fieldset {
     padding: 32px;
 }
 
+.gal-img {
+    transition: 1s ease;
+}
+
+.gal-img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
 .roww {
     display: -ms-flexbox;
     /* IE10 */
@@ -1007,4 +1004,105 @@ fieldset {
         flex: 100%;
         max-width: 100%;
     }
+}
+
+
+.contact-us-btn {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================== footer -=======--------------------- */
+
+.footer {
+    background-image: linear-gradient(to right, #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%);
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box h3 i {
+    color: var(--orange);
+}
+
+.footer .box-container .box .links {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .links i {
+    color: var(--orange);
+    padding-right: .5rem;
+}
+
+.footer .box-container .box .links:hover i {
+    padding-right: 2rem;
+}
+
+
+.footer .box-container .box p {
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .share a {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: var(--black);
+    margin-right: .2rem;
+    background: #eee;
+    text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+    background: var(--orange);
+    color: #fff;
+}
+
+.footer .box-container .box .email {
+    width: 100%;
+    margin: .7rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.footer .box-container .box .payment-img {
+    margin-top: 2rem;
+    height: 3rem;
+    display: block;
+}
+
+.footer .credit {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: var(--black);
+    border-top: var(--border);
 }
