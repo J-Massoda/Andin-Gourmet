@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Icons  -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+        integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="img\andin-gourmet-logo.png">
     <title>Fashionista - Andin Gourmet</title>
 
@@ -30,7 +31,7 @@
                         <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
+                        <a href="about.html" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Menu</a>
@@ -62,80 +63,85 @@
 
 
     <!-- ---------------------------------- Background Video    ------------------------------------------------- -->
-    <section class="footer" style="max-height: 40px;">
+    <section>
         <video autoplay muted loop id="myVideo">
             <source src="vid\dodo.mp4" type="video/mp4">
         </video>
-        <div class="content-sec">
+        <!-- <div class="content-sec">
             <h1>Contact Us</h1>
             <p>Working hours here</p>
 
-            <!-- <button id="myBtn" class="button-primary" onclick="myFunction()">Pause</button> -->
 
-
-
-            <!-- <section class="footer"> -->
-            <div class="box-container content-sec">
-                <div class="box">
-                    <h3>Door-step <i class="fas fa-shopping-basket"></i></h3>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam,
-                        saepe.
-                    </p>
-                    <div class="share">
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-twitter"></a>
-                        <a href="#" class="fab fa-instagram"></a>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <h3>contact info</h3>
-                    <a href="#" class="links">
-                        <i class="fas fa-phone"></i> +1-*********
-                    </a>
-                    <a href="#" class="links">
-                        <i class="fas fa-envelope"></i> xyz@mail.com
-                    </a>
-                    <a href="#" class="links">
-                        <i class="fas fa-map-marker-alt"></i> abc, xyz - ******
-                    </a>
-                </div>
-
-                <div class="box">
-                    <h3>quick links</h3>
-                    <a href="#" class="links">
-                        <i class="fas fa-arrow-right"></i> home
-                    </a>
-                    <a href="#" class="links">
-                        <i class="fas fa-arrow-right"></i> features
-                    </a>
-                    <a href="#" class="links">
-                        <i class="fas fa-arrow-right"></i> products
-                    </a>
-                    <a href="#" class="links">
-                        <i class="fas fa-arrow-right"></i> categories
-                    </a>
-                </div>
-
-                <div class="box">
-                    <img src="image/payment.png" class="payment-img" alt="" />
-                </div>
-            </div>
-
-
-
-            <div class="credit">
-                <p>
-                    Copyright &copy;
-                    <script>document.write(new Date().getFullYear());</script> <span> Andin Gourmet, Inc
-                    </span>
-                </p>
-
-            </div>
-            <!-- </section> -->
+        </div> -->
+        <!-- </section> -->
         </div>
 
+    </section>
+
+
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>
+                Open From 9:00AM To 11:00PM
+            </p>
+        </div>
+        <div class="containerr">
+            <div class="contact-info">
+                <div class="box">
+                    <div class="icon"> <i class="bi bi-geo-alt"> </i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p> Bonaberi, Douala Cameroon</p>
+                    </div>
+
+                </div>
+                <div class="contact-info">
+                    <div class="box">
+                        <div class="icon"> <i class="bi bi-telephone-fill"></i> </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p> +237 656 567 567</p>
+                        </div>
+
+                    </div>
+                    <div class="contact-info">
+                        <div class="box">
+                            <div class="icon"><i class="bi bi-envelope"></i>
+                            </div>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p> email.gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <h2>Send Message</h2>
+                    <div class="input-box">
+                        <input type="text" nname="" required="required">
+                        <span> Full Name</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" nname="" required="required">
+                        <span> Email</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" nname="" required="required">
+                        <span> Phone number</span>
+                    </div>
+                    <div class="input-box">
+                        <textarea required="required"></textarea>
+                        <span> Type Your Message...</span>
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" name="" value="Send">
+                    </div>
+            </div>
+            </form>
+        </div>
     </section>
 
 
@@ -165,98 +171,38 @@
 
 
 
+    <!-- ----------------------------------------------- footer ---------------------------------------------------- -->
 
-    <footer class="footer-section">
-        <!-- <div class="section-header text-center">
-            <h1><span>Andin Gourmet</span></h1>
-            <p class="footer-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate nihil minima consectetu
-            </p>
-        </div>
-        <br>
-
-        <div class="social-links">
-            <ul class="nav links">
-                <li class="linkss"><a href=""><i class="uil uil-instagram"></i></a></li>
-                <li class="linkss"><a href=""><i class="uil uil-twitter-alt"></i></a></li>
-                <li class="linkss"><a href=""><i class="uil uil-facebook-f"></i></a></li>
-
+    <footer>
+        <div class="footer-content">
+            <h3>Andin Gourmet</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ullam beatae maiores numquam explicabo
+                eaque, asperiores voluptate deserunt, atque, repellat quisquam omnis odio eveniet! Maiores beatae ut
+                molestiae soluta fugit!</p>
+            <ul class="social-links">
+                <li><a href="#" class="fab fa-facebook-f"></a></li>
+                <li><a href="#" class="fab fa-twitter"></a></li>
+                <li><a href="#" class="fab fa-instagram"></a></li>
             </ul>
-        </div> -->
-
-        <section class="footer">
-            <div class="box-container">
-                <div class="box">
-                    <h3>Door-step <i class="fas fa-shopping-basket"></i></h3>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam,
-                        saepe.
-                    </p>
-                    <div class="share">
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-twitter"></a>
-                        <a href="#" class="fab fa-instagram"></a>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <h3>contact info</h3>
-                    <a href="#" class="links">
-                        <i class="fas fa-phone"></i> +1-*********
-                    </a>
-                    <a href="#" class="links">
-                        <i class="fas fa-envelope"></i> xyz@mail.com
-                    </a>
-                    <a href="#" class="links">
-                        <i class="fas fa-map-marker-alt"></i> abc, xyz - ******
-                    </a>
-                </div>
-
-                <div class="box">
-                    <h3>quick links</h3>
-                    <a href="#" class="links">
-                        <i class="fas fa-arrow-right"></i> home
-                    </a>
-                    <a href="#" class="links">
-                        <i class="fas fa-arrow-right"></i> features
-                    </a>
-                    <a href="#" class="links">
-                        <i class="fas fa-arrow-right"></i> products
-                    </a>
-                    <a href="#" class="links">
-                        <i class="fas fa-arrow-right"></i> categories
-                    </a>
-                </div>
-
-                <div class="box">
-                    <img src="image/payment.png" class="payment-img" alt="" />
-                </div>
-            </div>
-
-
-
-            <div class="credit">
-                <p>
+        </div>
+        <div class="footer-bottom">
+            <p><small>
                     Copyright &copy;
-                    <script>document.write(new Date().getFullYear());</script> <span> Andin Gourmet, Inc
+                    <script>document.write(new Date().getFullYear());</script> <a href="#">ANDIN GOURMET</a>
                     </span>
-                </p>
-
-            </div>
-        </section>
+                </small></p>
+        </div>
+        <div class="footer-menu">
+            <ul class="f-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="">Catering</a></li>
+            </ul>
+        </div>
 
     </footer>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
