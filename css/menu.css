@@ -21,24 +21,26 @@ section {
     display: block;
 }
 
-/* body {
+.section {
+    padding: 2rem 0 4rem;
+}
 
-    /* background: url(/img/slideshow2.jpg) no-repeat; */
-/* background-image: linear-gradient(to right, #ff512f 0%,
-    #dd2476 51%,
-    #ff512f 100%);
-overflow: scroll;
-background-size: cover;
-margin: 0;
-background-position: top;
-font-family: "Open Sans",
-Helvetica,
-Arial,
-sans-serif; */
-/* font-weight: 300; */
-/* font-size: 12px;
-line-height: 30px;
-} */
+.section-title {
+    font-size: 1.5rem;
+}
+
+.section-subtitle {
+    display: block;
+    font-size: .813rem;
+    margin-bottom: 3rem;
+}
+
+.section-title,
+.section-subtitle {
+    text-align: center;
+}
+
+
 
 header {
 
@@ -67,6 +69,12 @@ a {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+.containerr {
+    max-width: 768px;
+    margin-left: 24px;
+    margin-right: 24px;
 }
 
 .section-container {
@@ -202,10 +210,46 @@ a {
     }
 }
 
+/* ================================== Menu section ================================================================== */
 
+.menu-data,
+.menu-header {
+    display: flex;
+}
 
+.menu-data {
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
 
+.menu-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 10%;
+    margin-right: 12px;
+}
 
+.menu-name {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.menu-price {
+    font-size: .813rem;
+    /* color: Hsl(var(230), 8%, 65%); */
+}
+
+.menu-description {
+    margin-bottom: 2.5rem;
+}
+
+.Menu-icon-star {
+    color: orange;
+}
+
+.swiper-pagination .swiper-pagination-menu {
+    bottom: 0;
+}
 
 /* =========================== footer -=======--------------------- */
 
