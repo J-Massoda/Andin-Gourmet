@@ -42,30 +42,3 @@ function showSlides() {
 }
 
 
-// =============================================== Menu section ===================================
-
-let swiperMenu = new Swiper('.menu-container', {
-    // cssMode: true,
-    loop: true,
-    grabCursor: true,
-    spaceBetween: 48,
-    //navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    // },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        dynamicBullets: true,
-    },
-
-    breakpoints: {
-        568: {
-            slidesperview: 2,
-        }
-    }
-
-    // mousewheel: true,
-    // keyboard: true,
-})
-

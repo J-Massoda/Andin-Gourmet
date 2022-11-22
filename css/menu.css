@@ -27,6 +27,7 @@ section {
 
 .section-title {
     font-size: 1.5rem;
+    margin-top: 90px;
 }
 
 .section-subtitle {
@@ -210,11 +211,30 @@ a {
     }
 }
 
+body {
+    background: url(/img/slideshow3.jpg) no-repeat;
+    /* background-image: linear-gradient(to right, #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%); */
+    overflow: scroll;
+    background-size: cover;
+    margin: 0;
+    background-position: top;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
 /* ================================== Menu section ================================================================== */
+.menu {
+
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
 
 .menu-data,
 .menu-header {
     display: flex;
+    margin: 20px;
 }
 
 .menu-data {
@@ -241,6 +261,7 @@ a {
 
 .menu-description {
     margin-bottom: 2.5rem;
+    margin: 20px;
 }
 
 .Menu-icon-star {
@@ -249,6 +270,25 @@ a {
 
 .swiper-pagination .swiper-pagination-menu {
     bottom: 0;
+}
+
+@media screen and (max-width: 350px) {
+
+    .menu-data,
+    .menu-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-image {
+        margin-right: 0;
+        margin-bottom: 4px;
+    }
+
+    .menu-data,
+    .menu-description {
+        text-align: center;
+    }
 }
 
 /* =========================== footer -=======--------------------- */
@@ -373,7 +413,7 @@ footer {
     color: #27bcda;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 350px) {
     .footer-menu ul {
         display: flex;
         margin-top: 10px;
